@@ -1,0 +1,30 @@
+﻿.viewContainer { margin: 20px; }
+
+.thumbnail {
+    min-height: 135px;
+    position: relative;
+}
+
+.thumbnail h3 { font-size: 1em; }
+
+.thumbnail img {
+    float: right;
+    margin: 10px;
+}
+
+.thumbnail .destroy {
+    background: url(../images/delete-icon.png) no-repeat;
+    bottom: 5px;
+    display: block;
+    height: 16px;
+    left: 5px;
+    position: absolute;
+    text-indent: -999em;
+    width: 16px;
+}
+
+.modal-open .modal, .btn:focus { outline: none!important }
+
+.book { margin: 10px; }
+
+.angularLink { cursor: pointer; }
