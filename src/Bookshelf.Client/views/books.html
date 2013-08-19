@@ -1,0 +1,33 @@
+﻿<div class="span12">
+    <ul class="nav">
+        <li class="book span3" ng-repeat="book in bookArray | filter:readFilter">
+            <div class="thumbnail">
+                <img ng-src="images/books/{{ book.Image }}" alt="Cover">
+                <p>
+                    <a ng-href="#/book/{{ book.Id }}">
+                        <strong>{{ book.Title }}</strong>
+                    </a>
+                    <br />
+                    by {{ book.Author }}
+                </p>
+                <p>
+                    <strong>Completed: </strong>
+                    <a class="angularLink" ng-click="toggleStatus(book)">
+                        <span ng-hide="!book.Completed">Yes</span>
+                        <span ng-hide="book.Completed">No</span>
+                    </a>
+                </p>
+                <a class="angularLink destroy" ng-click="removeBook(book.Id)">
+                    Remove from library</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="span12">
+    <ul class="nav nav-pills">
+        <li><a href="#/">All Books</a></li>
+        <li><a href="#/reading">Reading</a></li>
+        <li><a href="#/completed">Completed</a></li>
+    </ul>
+</div>
