@@ -38,22 +38,16 @@ angular.module('bookshelf', ['bookshelf.services.books'])
                 $scope.bookArray = data;
             });
 
-        $scope.toggleStatus = function(bookId) {
+        $scope.toggleStatus = function(book) {
+            book.Completed = !book.Completed;
             bookService
-                .getBooks(bookId)
-                .success(function(data, status, headers, config) {
-                    var book = data;
-                    book.completed = !book.completed;
-
-                    bookService
-                        .updateBook(bookId, book);
-                });
+                .updateBook(book.Id, book);
         };
 
         $scope.removeBook = function(bookId) {
             bookService
                 .deleteBook(bookId)
-                .success(function(data, status, headers, config) {
+                .success(function() {
                     bookService
                         .getBooks()
                         .success(function(data, status, headers, config) {

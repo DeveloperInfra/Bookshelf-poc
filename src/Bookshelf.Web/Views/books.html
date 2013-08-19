@@ -12,12 +12,12 @@
                 </p>
                 <p>
                     <strong>Completed: </strong>
-                    <a class="angularLink" ng-click="toggleStatus({{ book.Id }})">
+                    <a class="angularLink" ng-click="toggleStatus(book)">
                         <span ng-hide="!book.Completed">Yes</span>
                         <span ng-hide="book.Completed">No</span>
                     </a>
                 </p>
-                <a class="angularLink destroy" ng-click="removeBook({{ book.Id }})">
+                <a class="angularLink destroy" ng-click="removeBook(book.Id)">
                     Remove from library</a>
             </div>
         </li>
