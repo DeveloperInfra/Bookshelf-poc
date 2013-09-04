@@ -1,6 +1,3 @@
-//http://stackoverflow.com/questions/12792383/how-do-you-get-angular-js-to-work-in-a-windows-8-store-app
-//http://blog.jonathanchannon.com/2013/01/24/using-angularjsbackbonejs-in-windows-8-javascript-app/
-MSApp.execUnsafeLocalFunction(function () {
 /* ===================================================
  * bootstrap-transition.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#transitions
@@ -2292,4 +2289,3 @@ MSApp.execUnsafeLocalFunction(function () {
         })
 
     }(window.jQuery);
-});

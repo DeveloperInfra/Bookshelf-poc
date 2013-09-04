@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="bootstrap-combined.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Books\coffeescript.gif" />
     <Content Include="Images\Books\dom-enlightenment.gif" />
@@ -95,7 +96,10 @@
     <Content Include="Images\Books\sinatra.gif" />
     <Content Include="Images\delete-icon.png" />
     <Content Include="index.html" />
+    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-2.0.2.js" />
     <Content Include="Scripts\Services\bookdata.js" />
     <Content Include="Views\book.html" />
     <Content Include="Views\books.html" />

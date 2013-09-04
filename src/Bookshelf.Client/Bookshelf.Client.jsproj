@@ -80,6 +80,7 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\jquery-2.0.2.js" />
     <Content Include="js\jquery-2.0.3.js" />
     <Content Include="js\Services\bookdata.js" />
     <Content Include="views\book.html" />
